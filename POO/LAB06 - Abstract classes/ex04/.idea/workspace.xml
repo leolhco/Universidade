@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="748d1691-0997-4363-bb64-b9adac49e09b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../ex01/enunciado.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex02/enunciado.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex03/enunciado.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/enunciado.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pratica-abstract.pdf" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="2nrA47FRu4gw5LvzbSfSaJp5ZOh" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "Merging main",
+    "kotlin-language-version-configured": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="748d1691-0997-4363-bb64-b9adac49e09b" name="Changes" comment="" />
+      <created>1729720636368</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1729720636368</updated>
+    </task>
+    <servers />
+  </component>
+</project>

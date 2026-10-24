@@ -1,0 +1,22 @@
+void programa ()
+inicio
+    /* Programa com 10 erros, sendo um lexico */
+    int : a, x1, x2; 
+    float: media;
+    char parecer, recuperacao;
+
+    x1=6; /* erro aqui */
+    x2 := 4;
+    media =(x1 + x2] / 2;
+
+    /* avalia a media */
+    se (media >= 6) entao
+        parecer = 'A';
+        recuperacao = 'N';
+    senao
+	inicio
+        parecer = 'R';
+        recuperacao = "N"
+	fim
+  fim
+fim /*tem algo esquisito*/

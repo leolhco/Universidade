@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="78654ccf-cb22-4fab-aac1-533046a7505c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../ex01/ex01/src/candidato.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ex01/ex01/src/candidato.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex02/ex02/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ex02/ex02/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex02/ex02/src/candidato.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ex02/ex02/src/candidato.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex03/ex03/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ex03/ex03/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex03/ex03/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ex03/ex03/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex03/ex03/src/candidato.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ex03/ex03/src/candidato.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="2mCGIr5TJkOYmkJ7mvfCnqBkJBp" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="78654ccf-cb22-4fab-aac1-533046a7505c" name="Changes" comment="" />
+      <created>1726573100838</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1726573100838</updated>
+    </task>
+    <servers />
+  </component>
+</project>

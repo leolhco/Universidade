@@ -1,0 +1,89 @@
+openapi: 3.0.0
+info:
+  title: "Kaiju REST API"
+  description: "An API about Kaijus"
+  version: "1.0.0"
+servers:
+  - url: "/api"
+components:
+  schemas:
+    Kaiju:
+      type: "object"
+      required:
+        - name
+      properties:
+        power:
+          type: "string"
+        name:
+          type: "string"
+  parameters:
+    name:
+      name: "name"
+      description: "Name of the kaiju to get"
+      in: path
+      required: True
+      schema:
+        type: "string"        
+paths:
+  /kaijus:
+    get:
+      operationId: "kaiju.read_all"
+      tags:
+        - "Kaijus"
+      summary: "Read the list of kaijus"
+      responses:
+        "200":
+          description: "Successfully read kaijus list"    
+    post:
+      operationId: "kaiju.create"
+      tags:
+        - Kaijus
+      summary: "Create a kaiju"
+      requestBody:
+          description: "Kaiju to create"
+          required: True
+          content:
+            application/json:
+              schema:
+                x-body-name: "kaiju"
+                $ref: "#/components/schemas/Kaiju"
+      responses:
+        "201":
+          description: "Successfully created kaiju"       
+  /kaijus/{name}:
+    get:
+      operationId: "kaiju.read_one"
+      tags:
+        - Kaijus
+      summary: "Read one kaiju"
+      parameters:
+        - $ref: "#/components/parameters/name"
+      responses:
+        "200":
+          description: "Successfully read kaiju"
+    put:
+      tags:
+        - Kaijus
+      operationId: "kaiju.update"
+      summary: "Update a kaiju"
+      parameters:
+        - $ref: "#/components/parameters/name"
+      responses:
+        "200":
+          description: "Successfully updated kaiju"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              x-body-name: "kaiju"
+              $ref: "#/components/schemas/Kaiju"
+    delete:
+      tags:
+        - Kaijus
+      operationId: "kaiju.delete"
+      summary: "Delete a kaiju"
+      parameters:
+        - $ref: "#/components/parameters/name"
+      responses:
+        "204":
+          description: "Successfully deleted kaiju"

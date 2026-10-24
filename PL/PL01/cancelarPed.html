@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+ <title>Cancelar Pedidos</title>
+ <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Pizzaria do Leo - Cancelar Pedidos</h1>
+<form method="post" 
+enctype="application/x-www-form-urlencoded"
+ action="http://localhost:8000/cancelar_ped">
+ <p><label>Nome do Cliente: <input name="nomeCliente"></label></p>
+ <p><label>Telefone: <input type="tel" name="telCliente"></label></p>
+ <p><label>E-mail: <input type="email" name="emailCliente"></label></p>
+ <p><button>Cancelar Pedido</button></p>
+</form>
+<p><a href="menu.html" class="botao">Voltar ao Menu</a></p>
+</body>
+</html>

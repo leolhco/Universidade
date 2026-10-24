@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>API de Kaijus</title>
+</head>
+<body>
+    <h1>
+        Registro de Monstros Gigantes
+    </h1>
+    <ul>
+        {% for kaiju in kaijus %}
+        <li><strong>{{ kaiju.name }}</strong> - Poder Especial: {{ kaiju.power }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

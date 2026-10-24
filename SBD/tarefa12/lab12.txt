@@ -1,0 +1,221 @@
+MATHEUS HENRIQUE BARBOSA RIBEIRO 12311BCC041
+ANDERSON GABRIEL MOURA RIBEIRO 12311BCC032
+
+db_matheus_hbr=> CREATE TABLE TESTE1(
+db_matheus_hbr(> atributo11 integer,
+db_matheus_hbr(> atributo12 varchar(60));
+CREATE TABLE
+db_matheus_hbr=> CREATE TABLE TESTE2(
+db_matheus_hbr(> atributo21 integer,
+db_matheus_hbr(> atributo22 varchar(60));
+ERROR:  relation "teste2" already exists
+db_matheus_hbr=> INSERT INTO TESTE1 (atributo11, atributo12) VALUES (1, 'David');
+INSERT 0 1
+db_matheus_hbr=> BEGIN;
+BEGIN
+db_matheus_hbr=> UPDATE TESTE1 SET atributo12 = 'Dave' WHERE atributo11 = 1;
+UPDATE 1
+db_matheus_hbr=> SELECT atributo12 FROM TESTE1 WHERE atributo11 = 1;
+ atributo12
+------------
+ Dave
+(1 row)
+
+
+O código insere o valor 'David' na tabela teste1. 
+Depois, a transação atualiza esse valor para 'Dave'. O select retorna 'Dave', 
+Já que a atualização foi aplicada antes da consulta.
+
+
+db_matheus_hbr=> rollback;
+ROLLBACK
+db_matheus_hbr=> select atributo12 from teste1 where atributo11 = 1;
+ atributo12
+------------
+ David
+ David
+(2 rows)
+
+A instrução rollback desfaz a transação anterior, ou seja, a atualização de 'David' para 'Dave' é revertida.
+Portanto, a nova saída do SELECT será 'David', pois o valor original foi restaurado
+
+
+
+db_matheus_hbr=> DELETE FROM TESTE2;
+DELETE 0
+db_matheus_hbr=> INSERT INTO TESTE1 (atributo11, atributo12) VALUES (1, 'David');
+INSERT 0 1
+db_matheus_hbr=> BEGIN;
+BEGIN
+db_matheus_hbr=> INSERT INTO TESTE2 (atributo21, atributo22) VALUES (2, 'Arthur');
+INSERT 0 1
+db_matheus_hbr=> UPDATE TESTE1 SET atributo12 = 'Robert' WHERE atributo11 = 1;
+UPDATE 1
+db_matheus_hbr=> SELECT * FROM TESTE1;
+ atributo11 | atributo12
+------------+------------
+          1 | Robert
+(1 row)
+
+
+db_matheus_hbr=> ROLLBACK;
+ROLLBACK
+db_matheus_hbr=> SELECT * FROM TESTE1;
+ atributo11 | atributo12
+------------+------------
+          1 | David
+(1 row)
+
+
+db_matheus_hbr=> SELECT * FROM TESTE2;
+ atributo21 | atributo22
+------------+------------
+(0 rows)
+
+
+Antes do rollback, teste1  terá (1, 'Robert') e teste2  terá (2, 'Arthur').
+Após o rollback, teste1 volta para (1, 'David') e teste2 fica vazio. A atualização e a inserção são desfeitas
+
+
+
+
+
+
+
+db_matheus_hbr=> DELETE FROM TESTE1;
+DELETE 1
+db_matheus_hbr=> DELETE FROM TESTE2;
+DELETE 0
+db_matheus_hbr=> INSERT INTO TESTE1 (atributo11, atributo12) VALUES (1, 'David');
+INSERT 0 1
+db_matheus_hbr=> BEGIN;
+BEGIN
+db_matheus_hbr=> INSERT INTO TESTE2 (atributo21, atributo22) VALUES (2, 'Arthur');
+INSERT 0 1
+db_matheus_hbr=> SAVEPOINT FIRST;
+SAVEPOINT
+db_matheus_hbr=> UPDATE TESTE1 SET atributo12 = 'Robert' WHERE atributo11 = 1;
+UPDATE 1
+db_matheus_hbr=> SELECT * FROM TESTE1;
+ atributo11 | atributo12
+------------+------------
+          1 | Robert
+(1 row)
+
+Antes de atingir o savepoint, teste1 terá o valor (1, 'david'). após o savepoint first, a atualização de testei1 para (1, 'robert') ocorre.
+Portanto, a saída do select será (1, 'robert'), já que a atualização foi feita antes de qualquer rollback
+
+
+
+
+
+
+
+
+
+
+
+db_matheus_hbr=> INSERT INTO TESTE2 (atributo21, atributo22) VALUES (9, 'Chris');
+INSERT 0 1
+db_matheus_hbr=> COMMIT;
+WARNING:  there is no transaction in progress
+COMMIT
+db_matheus_hbr=> SELECT * FROM TESTE2;
+ atributo21 | atributo22
+------------+------------
+          9 | Chris
+(1 row)
+
+
+
+
+
+
+
+
+
+
+
+
+db_matheus_hbr=> BEGIN;
+BEGIN
+db_matheus_hbr=> UPDATE TESTE2 SET atributo22 = 'Gill' WHERE atributo21 = 9;
+UPDATE 1
+db_matheus_hbr=> COMMIT;
+COMMIT
+db_matheus_hbr=> ROLLBACK;
+WARNING:  there is no transaction in progress
+ROLLBACK
+db_matheus_hbr=> SELECT * FROM TESTE2;
+ atributo21 | atributo22
+------------+------------
+          9 | Gill
+(1 row)
+
+
+
+
+
+db_matheus_hbr=> CREATE SCHEMA LOCADORA;
+CREATE SCHEMA
+db_matheus_hbr=> SET SEARCH_PATH TO LOCADORA;
+SET
+db_matheus_hbr=> BEGIN;
+BEGIN
+db_matheus_hbr=> BEGIN;
+WARNING:  there is already a transaction in progress
+BEGIN
+db_matheus_hbr=> UPDATE CLIENTE SET
+db_matheus_hbr-> nome= 'João Gilberto'
+db_matheus_hbr-> UPDATE CLIENTE SET
+db_matheus_hbr-> nome= 'Laura Martins'
+db_matheus_hbr-> WHERE numcliente = '2';
+
+prompt 2
+db_matheus_hbr=> SET SEARCH_PATH TO LOCADORA;
+SET
+db_matheus_hbr=> CREATE TABLE Cliente(nome varchar Primary KEY,numcliente int );insert into Cliente Values ('Carlos',1);insert into Cliente Values ('Zuck',2);
+CREATE TABLE
+INSERT 0 1
+INSERT 0 1
+db_matheus_hbr=> BEGIN;
+BEGIN
+db_matheus_hbr=> UPDATE CLIENTE SET
+db_matheus_hbr-> nome= 'João Gilberto'
+db_matheus_hbr-> WHERE numcliente = '1';
+UPDATE 1
+
+
+db_matheus_hbr=> UPDATE CLIENTE SET
+db_matheus_hbr-> nome= 'Laura Martins'
+db_matheus_hbr-> WHERE numcliente = '2';
+UPDATE 1
+
+
+db_matheus_hbr=> SET SEARCH_PATH TO LOCADORA;
+SET
+db_matheus_hbr=> SET SEARCH_PATH TO LOCADORA;BEGIN;
+SET
+BEGIN
+db_matheus_hbr=> UPDATE CLIENTE SET
+db_matheus_hbr=> nome= 'Laura Martins'
+db_matheus_hbr=> WHERE numcliente = '2';
+UPDATE 1
+db_matheus_hbr=>UPDATE CLIENTE
+db_matheus_hbr=> SET nome= 'João Gama'
+db_matheus_hbr=> WHERE numcliente = '1';
+ERROR:  deadlock detected
+DETAIL:  Process 10192 waits for ShareLock on transaction 813; blocked by process 6376.
+Process 6376 waits for ShareLock on transaction 814; blocked by process 10192.
+HINT:  See server log for query details.
+CONTEXT:  while updating tuple (0,1) in relation "cliente"
+db_matheus_hbr=>!#
+db_matheus_hbr=>!#
+ 
+O deadlock ocorre porque os dois processos estão tentando acessar e bloquear as mesmas linhas em ordem diferente. 
+O primeiro processo bloqueia o cliente 1 e o segundo bloqueia o cliente 2. Ambos esperam um pelo outro liberar o bloqueio, criando um impasse. 
+Assim, o banco de dados não consegue resolver a situação e o deadlock é gerado.
+
+
+
+

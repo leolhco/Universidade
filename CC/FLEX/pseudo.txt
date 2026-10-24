@@ -1,0 +1,16 @@
+ini
+    valor : 0
+    limite : 20.5
+
+    enquanto valor < limite faca
+    ini
+        se valor = 10
+        ini
+            teste : 100
+        fim
+        senao
+        ini
+            teste : 0
+        fim
+    fim
+fim

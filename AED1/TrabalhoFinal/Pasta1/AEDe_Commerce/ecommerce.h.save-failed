@@ -1,0 +1,75 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct cliente{
+    char nome[30];
+    char us[20];
+    char senha[25];
+    char relacionados[5][20];
+}Cliente;
+
+typedef struct mercadoria{
+    char nome[15];
+    char descricao[25];
+    char categoria[15];
+    float preco, avaliacao;
+    int carrinho, estoque, vendas;
+    char vendedor[15];
+}Mercadoria;
+
+typedef struct vendedor {
+    char nome[15];
+    char tipo[15];
+}Vendedor;
+
+typedef struct listavendedor Listavendedor;
+
+typedef struct listamercadoria ListaProdutos;
+
+typedef struct listacarrinho Listacarrinho;
+
+typedef struct listausuario Listausuario;
+
+
+//Funções carrinho
+Carrinho *criarc();
+int lisvc(Carrinho *c);
+int tamc(Carrinho *c);
+int rem(Carrinho *c);
+void excluir(Carrinho *c);
+void showc(Carrinho *c);
+int insfc(Carrinho *c,int quantidade,Mercadoria m);
+int remposc(Carrinho *c,int pos);
+float totalc(Carrinho *c);
+int remqtdc(Carrinho *c, int qtd, int pos);
+int altrecomentdacao(Carrinho *c,Nousuario *user);
+
+//Funções vendedor
+Listavendedor* criarv();
+int lisvv(Listavendedor* v);
+int tamv(Listavendedor* v);
+int insfv(Listavendedor* v, Vendedor lo);
+void showv(Listavendedor* v);
+
+//Funções usuário
+Listausuario *criarlu();
+int lisvu(Listausuario *lu);
+int tamu(Listausuario *lu);
+int insiu(Listausuario *lu,Cliente cliente);
+int bususer(Listausuario *lu,char *us,char *senha,Nousuario **user);
+void showu(Listausuario *lu);
+
+//Funções Produtos
+ListaProdutos *criarProdutos();
+int lisvp(ListaProdutos *p);
+void showp(ListaProdutos *p);
+int showbyname(ListaProdutos *p, char *nome);
+int showbytype(ListaProdutos *p, char *categoria);
+int catval(char *categoria);
+int showrelated(ListaProdutos *p, Nousuario *conta);
+int criarNovaMercadoria(Mercadoria novaMercadoria);
+int salvarListaProdutos(ListaProdutos *p);
+int contem(ListaProdutos *p, char *item);
+int remestoque(ListaProdutos *p, char *it, float nota, int qtd);
+
+int lerProdutos(ListaProdutos *lp);

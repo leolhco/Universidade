@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+ <title>Fazer Pedidos</title>
+ <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Pizzaria do Leo - Fazer Pedidos</h1>
+<form method="post"
+ enctype="application/x-www-form-urlencoded"
+action="http://localhost:8000/processa_pedido">
+<p><label>Nome do Cliente: <input name="nomeCliente" ></label></p>
+<p><label>Telefone: <input type=tel name="telCliente"></label></p>
+<p><label>E-mail: <input type=email name="emailCliente"></label></p>
+<fieldset>
+ <legend> Tamanho da Pizza </legend>
+ <p><label> <input type=radio name="tamanho" value="p"> Pequena </label></p>
+ <p><label> <input type=radio name="tamanho" value="m"> Média </label></p>
+ <p><label> <input type=radio name="tamanho" value="g"> Grande </label></p>
+</fieldset>
+<fieldset>
+ <legend> Ingrediente <legend>
+ <p><label> <input type=checkbox name="ing" value="tom"> Tomate </label></p>
+ <p><label> <input type=checkbox name="ing" value="pre"> Presunto</label></p>
+ <p><label> <input type=checkbox name="ing" value="ceb"> cebola </label></p>
+ <p><label> <input type=checkbox name="ing" value="que"> Queijo </label></p>
+</fieldset>
+<p><label>Horário de entrega desejado: <input type=time min="11:00" max="21:00"
+step="900" name="tempo"></label></p>
+<p><label>Instruções para entrega: <textarea name="obs"></textarea></label></p>
+<p><button>Enviar Pedido</button></p>
+</form>
+<p><a href="menu.html" class="botao">Voltar ao Menu</a></p>
+</body>
+</html>

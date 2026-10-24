@@ -1,0 +1,5 @@
+Joana, 01/01/2003, 123476789, 8.0, IA, 01/01/2021
+Pedro, 01/01/2001, 699456789, 6.0, IA, 01/01/2021
+Baroni, 01/01/2004, 987654321, 7.0, Processamento Digital de Imagens, 01/01/2021
+Leonardo, 01/01/2000, 719043210, 5.0, Machine Learning, 01/01/2021
+

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a0e70d72-74c7-43ff-a416-5c51134fd022" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../enunciado.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../LAB08 - Interfaces/ex01/enunciado.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../LAB08 - Interfaces/ex02/enunciado.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../LAB09 - Collections/enunciado.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../samples/Polimorfismo/Estudantes/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../samples/Polimorfismo/Estudantes/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../samples/Polimorfismo/out/production/Polimorfismo/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../samples/Polimorfismo/out/production/Polimorfismo/Main.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="2oZav4wkjf9AtBZIZBhlqnwo6Ui" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "Merging main",
+    "kotlin-language-version-configured": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a0e70d72-74c7-43ff-a416-5c51134fd022" name="Changes" comment="" />
+      <created>1731079787551</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1731079787551</updated>
+    </task>
+    <servers />
+  </component>
+</project>

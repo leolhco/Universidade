@@ -1,0 +1,73 @@
+Trabalho Final de AED - Tema: E-COMMERCE
+Integrantes:
+
+Diogo Vieira de Castro (12311BCC002)
+Guilherme Willians Silva (12311BCC031)
+Leonardo H. C. Oliveira (12311BCC003)
+Paulo Otávio Guerreiro Souza (12311BCC007)
+
+Bibliotecas Utilizadas:
+
+string.h: Usada para comparar strings e copiar strings para outros locais.
+time.h: Utilizada para gerar números "aleatórios" com rand e srand.
+ctype.h: Necessária para utilizar a função strlwr que converte letras para minúsculas.
+
+Manual de Utilização:
+
+Ao abrir nosso programa, o usuário terá 4 opções:
+
+1 - Fazer login como cliente
+2 - Se cadastrar como cliente
+3 - Fazer login como vendedor
+4 - Se cadastrar como vendedor
+
+Se o usuário logar com sucesso como vendedor, terá a opção de adicionar um novo produto e voltar.
+
+Se o usuário logar como os únicos usuários já cadastrados ("Professor" ou "Monitor"), ao fazer login com sucesso, será apresentada uma lista de 5 produtos relacionados ao último item comprado presente na pilha "Histórico de Compras" de cada um. O usuário poderá adicionar o item ao carrinho.
+
+Se o usuário acabou de se cadastrar, será apresentada uma lista de 5 produtos aleatórios. O usuário poderá adicionar o item ao carrinho.
+
+Após qualquer login ou cadastro, o usuário será direcionado ao menu principal, onde poderá buscar produtos por categoria ou por nome. Se buscar por categoria, uma lista com todas as categorias dos produtos adicionados será mostrada, incluindo aquelas que o vendedor adicionou ao cadastrar um item.
+
+O usuário também pode buscar por nome (conforme a lista de produtos ao final deste arquivo).
+
+Ao escolher um produto, o usuário deverá digitar o índice do produto desejado e a quantidade desejada. Em seguida, ele será redirecionado ao menu principal e poderá visualizar o produto adicionado escolhendo a opção "Mostrar Carrinho".
+
+Em mostrar carrinho ao realizar a compra aparecerão varias opcoes ao cliente em relação a 
+qualidade de produto qualidade plataforma e-commerce, e como o pagamento sera feito, via pix
+boleto ou cartão.
+
+Na parte parte de relatórios no menu principal aparecera a média de nota do site, no inicio a nota sera
+0. 0 o usuario deve realizar uma compra para o mesmo adicionar a nota, aparecera também o produto mais vendido do site, e por ultimo a quantidade de vezes que os clientes optaram de fazer o pagamento
+via pix, cartão, boleto.
+
+Lista de Nomes dos Produtos:
+
+Luvas de Boxe Profissional
+Skate Longboard Freestyle
+Bola de Basquete Oficial
+Tênis de Corrida Profissional
+Bicicleta Mountain Bike
+Termômetro Infravermelho
+Balança Digital de Precisão
+Kit Primeiros Socorros
+Massageador Shiatsu
+Monitor Cardíaco Inteligente
+Bicicleta Infantil
+Patinete Infantil Colorido
+Kit Pintura Infantil
+Kit Criativo de Artesanato
+Boneco Articulado HeroiX
+Quebra-Cabeça Desafio
+Boneca Interativa
+Carrinho de Controle Remoto
+Forno Elétrico Multifuncional
+Fogão Cooktop 5 Bocas
+Geladeira Side by Side
+Aspirador de Pó Robótico
+Máquina de Lavar Roupa
+Câmera Digital Profissional
+Console de Jogos GamerX
+Fone de Ouvido Bluetooth
+Smart TV UltraHD
+Notebook SuperTech

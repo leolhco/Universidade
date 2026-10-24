@@ -1,0 +1,59 @@
+# depslib dependency file v1.0
+1713059101 source:c:\users\diogo\codeblocks\aed\aede_commerce\usuario.c
+	<stdio.h>
+	<stdlib.h>
+	"ecommerce.h"
+	<string.h>
+
+1713059690 c:\users\diogo\codeblocks\aed\aede_commerce\ecommerce.h
+	<stdio.h>
+	<stdlib.h>
+
+1713059775 source:c:\users\diogo\codeblocks\aed\aede_commerce\vendedor.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"ecommerce.h"
+
+1713059055 source:c:\users\diogo\codeblocks\aed\aede_commerce\carrinho.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"ecommerce.h"
+
+1713107345 source:c:\users\diogo\codeblocks\aed\aede_commerce\produtos.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"ecommerce.h"
+
+1713107193 source:c:\users\diogo\codeblocks\aed\aede_commerce\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	"ecommerce.h"
+
+1712635390 c:\users\diogo\codeblocks\aed\aede_commerce\usuario.c
+	<stdio.h>
+	<stdlib.h>
+	"ecommerce.h"
+	<string.h>
+
+1712715946 c:\users\diogo\codeblocks\aed\aede_commerce\includes.h
+	"ecommerce.h"
+	"nos.h"
+
+1713042324 c:\users\diogo\codeblocks\aed\aede_commerce\nos.h
+	"ecommerce.h"
+
+1713059064 source:c:\users\diogo\codeblocks\aed\aede_commerce\historico.c
+	"ecommerce.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+

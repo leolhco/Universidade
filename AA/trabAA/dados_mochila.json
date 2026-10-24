@@ -1,0 +1,130 @@
+{
+  "capacidade": 150,
+  "itens": [
+    {
+      "id": 1,
+      "valor": 41,
+      "peso": 4
+    },
+    {
+      "id": 2,
+      "valor": 2,
+      "peso": 24
+    },
+    {
+      "id": 3,
+      "valor": 18,
+      "peso": 8
+    },
+    {
+      "id": 4,
+      "valor": 15,
+      "peso": 5
+    },
+    {
+      "id": 5,
+      "valor": 48,
+      "peso": 4
+    },
+    {
+      "id": 6,
+      "valor": 44,
+      "peso": 24
+    },
+    {
+      "id": 7,
+      "valor": 35,
+      "peso": 3
+    },
+    {
+      "id": 8,
+      "valor": 38,
+      "peso": 14
+    },
+    {
+      "id": 9,
+      "valor": 3,
+      "peso": 1
+    },
+    {
+      "id": 10,
+      "valor": 6,
+      "peso": 7
+    },
+    {
+      "id": 11,
+      "valor": 15,
+      "peso": 17
+    },
+    {
+      "id": 12,
+      "valor": 39,
+      "peso": 1
+    },
+    {
+      "id": 13,
+      "valor": 36,
+      "peso": 7
+    },
+    {
+      "id": 14,
+      "valor": 46,
+      "peso": 21
+    },
+    {
+      "id": 15,
+      "valor": 45,
+      "peso": 18
+    },
+    {
+      "id": 16,
+      "valor": 27,
+      "peso": 8
+    },
+    {
+      "id": 17,
+      "valor": 29,
+      "peso": 19
+    },
+    {
+      "id": 18,
+      "valor": 18,
+      "peso": 26
+    },
+    {
+      "id": 19,
+      "valor": 1,
+      "peso": 25
+    },
+    {
+      "id": 20,
+      "valor": 11,
+      "peso": 23
+    },
+    {
+      "id": 21,
+      "valor": 28,
+      "peso": 11
+    },
+    {
+      "id": 22,
+      "valor": 18,
+      "peso": 5
+    },
+    {
+      "id": 23,
+      "valor": 14,
+      "peso": 25
+    },
+    {
+      "id": 24,
+      "valor": 22,
+      "peso": 4
+    },
+    {
+      "id": 25,
+      "valor": 6,
+      "peso": 13
+    }
+  ]
+}

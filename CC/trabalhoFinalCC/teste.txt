@@ -1,0 +1,5 @@
+int programa ()
+inicio
+    int : variavel ;
+    variavel = 10 ;
+fim

@@ -1,0 +1,101 @@
+50
+SaoPaulo
+RioDeJaneiro
+BeloHorizonte
+Vitoria
+Campinas
+Santos
+JuizDeFora
+Uberlandia
+RibeiraoPreto
+Sorocaba
+Taubate
+Piracicaba
+SaoCarlos
+Jundiai
+Marilia
+Araraquara
+Barretos
+Franca
+Itu
+Limeira
+Guaratingueta
+Itajuba
+Caxambu
+Mococa
+Itapeva
+Catanduva
+MogiMirim
+Botucatu
+Ituverava
+TresLagoas
+Aparecida
+Lavras
+SaoJoaoDelRei
+Resende
+Lorena
+Barbacena
+Itabira
+Araxá
+Uberaba
+PatosDeMinas
+PoçosDeCaldas
+Varginha
+Guaxupe
+Pirassununga
+Formiga
+Passos
+TrêsPontas
+Piumhi
+Lavrinhas
+SaoGotardo
+Pedregulho
+Jaboticabal
+SaoPaulo Campinas 109
+SaoPaulo Santos 85
+SaoPaulo RioDeJaneiro 416
+SaoPaulo Sorocaba 101
+SaoPaulo Jundiai 68
+RioDeJaneiro JuizDeFora 183
+RioDeJaneiro BeloHorizonte 440
+RioDeJaneiro Vitoria 516
+BeloHorizonte Uberlandia 537
+BeloHorizonte JuizDeFora 266
+Vitoria BeloHorizonte 515
+Campinas RibeiraoPreto 222
+Santos RioDeJaneiro 500
+RibeiraoPreto Uberlandia 300
+Sorocaba Itu 37
+Piracicaba SaoCarlos 97
+Piracicaba Campinas 73
+Marilia Araraquara 172
+Barretos RibeiraoPreto 123
+Franca Barretos 111
+Ituverava RibeiraoPreto 90
+TresLagoas Ituverava 317
+SaoCarlos Araraquara 38
+Itajuba Varginha 165
+Itajuba Caxambu 82
+Caxambu Varginha 113
+Mococa Araraquara 150
+Itapeva Sorocaba 158
+Catanduva Barretos 108
+Botucatu Piracicaba 114
+PatosDeMinas Uberaba 260
+Lavras SaoJoaoDelRei 92
+SaoJoaoDelRei Lavras 92
+Itabira BeloHorizonte 109
+Resende RioDeJaneiro 167
+PoçosDeCaldas Piumhi 244
+Pirassununga Campinas 120
+Guaxupe SaoCarlos 170
+TresPontas Varginha 29
+Lavrinhas Aparecida 53
+Pedregulho Franca 42
+Passos Formiga 159
+Formiga Piumhi 67
+SaoGotardo Araxa 133
+Barbacena BeloHorizonte 170
+Itabira Vitoria 436
+Jaboticabal RibeiraoPreto 59
+PatosDeMinas TresLagoas 709
