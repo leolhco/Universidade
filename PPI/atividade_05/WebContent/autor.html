@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Autor</title>
+</head>
+<body>
+    <h1>autor</h1>
+
+    <fieldset>
+        <legend>Cadastrar</legend>
+        <form action="autor" method="post">
+            <input type="hidden" name="acao" value="cadastrar"/>
+            Nome real: <input type="text" name="nomeReal"/><br/>
+            Nome artistico: <input type="text" name="nomeArtistico"/><br/>
+            Data de nascimento: <input type="date" name="dataNascimento"/><br/>
+            <input type="submit" value="Cadastrar"/>
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>Alterar</legend>
+        <form action="autor" method="post">
+            <input type="hidden" name="acao" value="alterar"/>
+            ID: <input type="number" name="id"/><br/>
+            Nome real: <input type="text" name="nomeReal"/><br/>
+            Nome artistico: <input type="text" name="nomeArtistico"/><br/>
+            Data de nascimento: <input type="date" name="dataNascimento"/><br/>
+            <input type="submit" value="Alterar"/>
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>Consultar</legend>
+        <form action="autor" method="get">
+            <input type="hidden" name="acao" value="consultar"/>
+            ID: <input type="number" name="id"/><br/>
+            <input type="submit" value="Consultar"/>
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>Remover</legend>
+        <form action="autor" method="post">
+            <input type="hidden" name="acao" value="remover"/>
+            ID: <input type="number" name="id"/><br/>
+            <input type="submit" value="Remover"/>
+        </form>
+    </fieldset>
+</body>
+</html>

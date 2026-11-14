@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8">
+		<title>Cadastro - Medicina Veterinaria</title>
+	</head>
+	
+	<body>
+		<form name="formulario_cadastro" style="background-color:black; color:white; border: 10px solid #2c3e50">
+			<label>Nome da Empresa:</label>
+			<input type="text" name="nome" placeholder="Digite o nome da empresa" required>
+			
+			
+			<br>
+			<label>Email da Empresa:</label>
+			<input type="text" name="email" placeholder="Digite o email da empresa" required>
+			
+			<br>
+			<label>Senha:</label>
+			<input type="password" name="senha" placeholder="Digite a senha" required>
+			
+			<br>
+			<label>Especialização</label>
+			<select name="especializacao" required>
+				<option value="pequenos animais">Clínica Médica de Pequenos Animais</option>
+				<option value="cirurgia veterinaria">Cirurgia Veterinária</option>
+				<option value="animais selvagens" selected>Medicina Veterinária de Animais Selvagens</option>
+				<option value="veterinaria de coletivo">Medicina Veterinária do Coletivo</option>
+			</select>
+			
+			<br>
+			<input type="checkbox" name="termos" required>Aceito os termos de uso da Empresa
+			
+			<br>
+			<button type="submit">Enviar</button>
+			<button type="reset">Limpar</button>
+		</form>
+	</body>
+
+</html>

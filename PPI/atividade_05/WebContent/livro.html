@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Livro</title>
+</head>
+<body>
+    <h1>livro</h1>
+
+    <fieldset>
+        <legend>Cadastrar</legend>
+        <form action="livro" method="post">
+            <input type="hidden" name="acao" value="cadastrar"/>
+            Nome: <input type="text" name="nome"/><br/>
+            Editora: <input type="text" name="editora"/><br/>
+            Autor (ID): <input type="number" name="autorId"/><br/>
+            <input type="submit" value="Cadastrar"/>
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>Alterar</legend>
+        <form action="livro" method="post">
+            <input type="hidden" name="acao" value="alterar"/>
+            ID: <input type="number" name="id"/><br/>
+            Nome: <input type="text" name="nome"/><br/>
+            Editora: <input type="text" name="editora"/><br/>
+            Autor (ID): <input type="number" name="autorId"/><br/>
+            <input type="submit" value="Alterar"/>
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>Consultar</legend>
+        <form action="livro" method="get">
+            <input type="hidden" name="acao" value="consultar"/>
+            ID: <input type="number" name="id"/><br/>
+            <input type="submit" value="Consultar"/>
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>Remover</legend>
+        <form action="livro" method="post">
+            <input type="hidden" name="acao" value="remover"/>
+            ID: <input type="number" name="id"/><br/>
+            <input type="submit" value="Remover"/>
+        </form>
+    </fieldset>
+</body>
+</html>

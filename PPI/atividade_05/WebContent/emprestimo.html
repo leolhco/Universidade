@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Emprestimo</title>
+</head>
+<body>
+    <h1>emprestimo</h1>
+
+    <fieldset>
+        <legend>Cadastrar</legend>
+        <form action="emprestimo" method="post">
+            <input type="hidden" name="acao" value="cadastrar"/>
+            Data emprestimo: <input type="date" name="dataEmprestimo"/><br/>
+            Data devolucao: <input type="date" name="dataDevolucao"/><br/>
+            Usuario (ID): <input type="number" name="usuarioId"/><br/>
+            Livro (ID): <input type="number" name="livroId"/><br/>
+            Revista (ID): <input type="number" name="revistaId"/><br/>
+            <input type="submit" value="Cadastrar"/>
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>Alterar</legend>
+        <form action="emprestimo" method="post">
+            <input type="hidden" name="acao" value="alterar"/>
+            ID: <input type="number" name="id"/><br/>
+            Data emprestimo: <input type="date" name="dataEmprestimo"/><br/>
+            Data devolucao: <input type="date" name="dataDevolucao"/><br/>
+            Usuario (ID): <input type="number" name="usuarioId"/><br/>
+            Livro (ID): <input type="number" name="livroId"/><br/>
+            Revista (ID): <input type="number" name="revistaId"/><br/>
+            <input type="submit" value="Alterar"/>
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>Consultar</legend>
+        <form action="emprestimo" method="get">
+            <input type="hidden" name="acao" value="consultar"/>
+            ID: <input type="number" name="id"/><br/>
+            <input type="submit" value="Consultar"/>
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>Remover</legend>
+        <form action="emprestimo" method="post">
+            <input type="hidden" name="acao" value="remover"/>
+            ID: <input type="number" name="id"/><br/>
+            <input type="submit" value="Remover"/>
+        </form>
+    </fieldset>
+</body>
+</html>

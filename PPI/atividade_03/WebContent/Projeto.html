@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro do Projeto</title>
+  <script src="./scripts/scriptPJ.js" defer></script>
+</head>
+<body>
+  <h2>Cadastro do Projeto</h2>
+  <form id="formProjeto">
+    <label>Nome do Projeto:</label>
+    <input type="text" id="nome" required autofocus><br><br>
+
+    <label>Responsável:</label>
+    <input type="text" id="responsavel" required><br><br>
+
+    <label>Data de Início:</label>
+    <input type="text" id="inicio" required><br><br>
+
+    <label>Data de Entrega:</label>
+    <input type="text" id="entrega" required><br><br>
+
+    <label>Categoria:</label>
+    <select id="categoria" required>
+      <option value="">Selecione...</option>
+      <option value="Web">Web</option>
+      <option value="Mobile">Mobile</option>
+      <option value="IA">IA</option>
+    </select><br><br>
+
+    <button type="button" onclick="gerarRelatorio()">Gerar Relatório</button>
+  </form>
+
+  <div id="relatorio"></div>
+</body>
+</html>
